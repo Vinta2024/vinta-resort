@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Poetsen One", sans-serif;
+
+}
+/* video background */
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 0%;
+    min-height: 0%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    animation: fadeIn 2s;
+}
+/* logo top */
+.logo-top {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    height: 13%;
+    width: 8%;
+    transition: 0.3s;
+    animation: fadeIn 2s;
+}
+
+.logo-top:hover {
+    transform: scale(1.1);
+}
+/* search bar */
+.search-icon {
+    position: fixed;
+    top: 40px;
+    right: 100px;
+    z-index: 999;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    animation: fadeIn 2s;
+
+}
+
+.fas fa-search {
+    position: absolute;
+    top: 7px;
+    right: 99%;
+
+    
+}
+
+#searchForm {
+    font-family: "Lexend", sans-serif;
+    position: fixed;
+    top: 60px;
+    right: 55px;
+    transform: translate(-5     0%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    z-index: 1040;
+    opacity: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    height: 30px;
+}
+
+#searchForm.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+
+.search-suggestions {
+    font-family: "Lexend", sans-serif;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 1px solid;
+    border-top: none;
+    background: white;
+    display: none;
+    border-radius: 0 0 0 0;
+}
+
+.search-suggestions.active {
+    display: block;
+}
+
+.search-suggestions .suggestion-item {
+    padding: 10px;
+    display: block;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+
+.search-suggestions .suggestion-item:hover {
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+
+/* Navigation */
+#openNav {
+    font-family: "Lexend", sans-serif;
+    position: fixed;
+    top: 45px;
+    right: 40px;
+    width: 50px;
+    transition: 0.3s;
+    animation: fadeIn 2s;
+    background-color: #c4f1f7;
+}
+
+#openNav:hover {
+    transform: scale(1.1);
+}
+
+.texts {
+    padding: 70px 0;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+}
+
+.texts h1 {
+    font-size: 110px;
+    font-weight: bold;
+    margin-top: 8%;
+    color: white;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.texts p {
+    font-size: 30px;
+   
+}
+
+.btn-info {
+    background-color: #11d6f0;
+    font-family: "Lexend", sans-serif;
+}
+
+.btn-info a {
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-info a:hover {
+    color: black;
+    transform: scale(1.1);
+
+}
+
+
+.sidebar {
+    font-family: "Lexend", sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #29AB87;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+    animation: fadeIn 2s;
+
+}
+
+.sidebar a:hover {
+    color: black;
+    background-color: #ABE4A0;
+    transform: scale(1.1);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.sidebar .logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: block;
+}
+
+.sidebar .logo:hover {
+    transform: scale(1.1);
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.texts {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s;
+}

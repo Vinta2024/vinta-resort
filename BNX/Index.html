@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Vinta Cottage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="OtherPictures/logo.jpg">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+	<!------------ This part logo top ------------>
+	<a href="index.html">
+		<img src="OtherPictures/logo.jpg" class="logo-top">
+	</a>
+	<!------------ end part logo top ------------>
+
+	<!------------ This part search ------------>
+	<div class="search-icon" onclick="toggleSearch()">
+		<i class='fas fa-search'></i>
+	</div>
+	<form id="searchForm">
+		<input placeholder="Search..." id="searchInput">
+		<div class="search-suggestions" id="suggestionsBox"></div>
+	</form>
+	<!------------ end part search ------------>
+
+	<!------------ This part is sidebar code  ------------>
+	<div id="main" class="container-fluid">
+		<button id="openNav" onclick="openNav()" class="btn btn-success">
+			<i class="fa fa-bars"></i>
+		</button>
+	</div>
+	<nav id="mySidebar" class="sidebar">
+		<a class="closebtn" onclick="closeNav()">×</a>
+		<a href="aboutus.html"><img src="OtherPictures/logo-removebg-preview.png"
+				class="logo"></a>
+		
+
+	
+			<div class="dropdown-content" id="aboutusDropdown">
+				<a href="#header"><i class='fas fa-home'></i>HOME</a>
+				<a href="#about-us"><i class='fas fa-info-circle'></i>POLICY</a>
+				<a href="#facilities"><i class='fas fa-home'></i>FACILITIES & EVENTS</a>
+				<a href="#foods"><i class='fas fa-drumstick-bite'></i>FOOD</a>
+				<a href="#BookNow"><i class='fas fa-envelope'></i>Book Now</a>
+			</div>
+		</div>
+	</nav>
+	<!------------ END part OF sidebar code  ------------>
+
+	<!------------ This part is Header  ------------>
+	<header id="header">
+		<img class="image" src="OtherPictures/h.jpg" alt="About Us">
+		<div class="header-content">
+			<h1></h1>
+		
+		</div>
+	</header>
+	<!------------ end of Header  ------------>
+	<section class="about-us" id="about-us">
+		<h2>POLICY</h2>
+		<hr>
+		<div class="list">
+		<ul>
+			<li>No smoking/vaping inside Premises. 	</li>
+			<li>Full payment must be settled 2 weeks before the event.</li>
+			<li>Pool usage starts at your time of event and ends at 8pm.</li>
+			<li>At least 30% down payment upon booking.Non-refundabla.</li>
+			<li>Any breakages from hotel properties are subject to charges.</li>
+			<li>Send the food details 2 weeks before the event for confirmation.</li>
+			<li>Any extenuating circumstances not stipulated in the contract may incur cost.</li>
+			<li>Food tasting schedule is two weeks before the event. Not applicable for rush event.</li>
+			<li>Always ask the management before making decisions on using any hotel properties.</li>
+			<li>Third party decorators must present an ingress and egress permit to guard on duty.</li>
+			<li>We accommodate rush event (1 week before the event) However,there will be no Fee Welcome Tarpulin. </li>
+			<li>We have the legal rigth to receive a copy of pictures and videos of event for marketing purposes.</li>
+		 </ul> 	
+</div>
+		<hr>
+		
+	</section>
+	<!------------ FACILITIES ------------>
+	<section class="event" id="facilities">
+		<h1>Facilities & Events</h1>
+
+		<!------------ PIC ------------>
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<img src="OtherPictures/room.jpg" alt="ROOM" style="width:540px;height:300px">
+				</div>
+				<div class="flip-box-back">
+					<h3>ROOMS RATES</h3>
+					<div class="flip-box-tas">
+						<ul>
+					<li>SINGLE ROOM  PHP 1,500</li>
+					<li>DELUXE ROOM PHP 2,000</li>
+					<li>BEACH FACING ROOM PHP3,000</li>
+						</ul>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!------------ PIC  ------------>
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<img src="OtherPictures/events.jpg" alt="EVENTS" style="width:540px;height:300px">
+				</div>
+				<div class="flip-box-back">
+					<h3>CLAMPING CHARGE</h3>
+					<ul>
+						<li>2 PAX PHP700</li>
+						<li>3-4 PAX 1,3000</li>
+						<li>EXTRA PERSON PHP 250</li>
+						<li>EXTRA TALBE 1 AND 4 CHAIR PHP 150</li>
+						<li>GLAMPING VISITOR FEE (until 8:00pm) PHP 50</li>
+						<li>Visitor who remains pass 8:00pm PHP 250</li>
+							</ul>
+				</div>
+			</div>
+		</div>
+		<!------------ PIC ------------>
+		<div class="flip-box">
+			<div class="flip-box-inner">
+				<div class="flip-box-front">
+					<img src="OtherPictures/room1.jpg" alt="VENUE" style="width:540px;height:300px">
+				</div>
+				<div class="flip-box-back">
+					<h3>PACAGE INCLUSIVE OF</h3>
+					<ul>
+						<li>Venue tables and chairs - 50 pax and up PHP 8,000</li>
+						<li>Venue tables and chairs - 40 pax and below PHP6,000</li>
+						<li>Whole Venue including 9 Rooms PHP 23,000</li>
+							</ul>
+					
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+	<section class="foods">
+<div class="food">
+	<img class="image" src="OtherPictures/food.jpg" alt="About Us" style="width:1200px;height:1200px">>
+</div>
+<hr>
+
+	</section>
+		<!------------ Content  ------------>
+ <section class="main_bg" id="BookNow">
+<div class="form">
+	<div class="form-text">
+		<img src="OtherPictures/logo.jpg" alt="ROOM" style="width:100px;height:30px;">
+<h1><span><img scr="logo.jpg" alt=""></span>Book Now<span><img src="logo.jpg" alt=""></span></h1>
+<p></p>
+	</div>
+	<div class="main-form">
+		<form action="index.php" method="get">
+			<div>
+				<span>What is your name ?</span>
+				<input type="text" name="name" id="name" required>
+			  </div>
+          <div>
+			<span>Your email address ?</span>
+			<input type="email" name="name" id="name" required>
+		  </div>
+		  <div>
+			<!--this is the select option-->
+			<span>How many people ?</span>
+			<select name="people" id="people" required>
+				<option value=""><----People----></option>
+				<option value="1">1-10</option>
+				<option value="2">1-20</option>
+				<option value="3">1-30</option>
+				<option value="4">1-40</option>
+				<option value="5">1-50 or more</option>
+				
+
+			</select>
+			<!--this is the select option-->
+		  </div>
+		  <div>
+			<span>What time ?</span>
+			<input type="text" name="time" id="time" required>
+		  </div>
+		  <div>
+			<span>What is the date ?</span>
+			<input type="date" name="date" id="date" placeholder="date" required>
+		  </div>
+		   <div>
+			<span>Your phone number</span>
+			<input type="number" name="number" id="number" placeholder="Write your  number here..." required>
+		  </div>
+		  <div id="submit">
+			<input type="submit" value="SUBMIT" id="submit">
+		  </div>
+			
+		</form>
+
+	</div>
+</div>
+
+
+</section>
+<footer>
+	<div class="footer">
+		<div class="row">
+			<ul>
+				<li><a href="#about-us">Privacy Policy</a></li>
+				<li><a href="#about-us">Terms & Conditions</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<br>
+		</div>
+
+		<div class="greenfoot">
+			<div>Alunsina Hotel And Spa, Teodorica Ave, Brgy,Banica Roxas City,Capiz 5800 | +63 956 148 3553 | (036) 520 7908</div>
+		</div>
+	</div>
+</footer>
+	<!------------ End Content  ------------>
+
+	</section>
+		<script src="script.js"></script>
+</body>
+
+</html>
